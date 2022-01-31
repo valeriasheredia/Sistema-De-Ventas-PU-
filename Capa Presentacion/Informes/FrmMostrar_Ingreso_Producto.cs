@@ -16,5 +16,14 @@ namespace Capa_Presentacion.Informes
         {
             InitializeComponent();
         }
+
+        private int Id_Ingreso;
+
+        public int Id_Ingreso1 { get => Id_Ingreso; set => Id_Ingreso = value; }
+
+        private void FrmMostrar_Ingreso_Producto_Load(object sender, EventArgs e)
+        {
+            this.crystalReportViewer1.RefreshReport();
+        }
     }
 }
