@@ -67,8 +67,6 @@ namespace Capa_Presentacion
             CargarDatos();
         }
 
-       
-
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             Eliminar();
@@ -101,7 +99,6 @@ namespace Capa_Presentacion
                 }
                 catch (Exception ex)
                 {
-
                     MessageBox.Show("Debe seleccionar un registro para eliminar", "Eliminar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
@@ -134,9 +131,7 @@ namespace Capa_Presentacion
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show("El Cliente no fue encontrado por: " + ex.Message, "Buscar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-
             }
         }
 
@@ -171,7 +166,6 @@ namespace Capa_Presentacion
                 }
                 catch (Exception ex)
                 {
-
                     MessageBox.Show("Debe seleccionar un registro por favor", "Editar Cliente", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
