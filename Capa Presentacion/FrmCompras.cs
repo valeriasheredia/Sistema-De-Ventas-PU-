@@ -82,5 +82,27 @@ namespace Capa_Presentacion
         {
             CargarDatos();
         }
+
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dataGridView1.Rows.Count != 0)
+                {
+                    Informes.FrmMostrar_Ingreso_Productos Mostrar = new Informes.FrmMostrar_Ingreso_Productos();
+                    Mostrar.Id_ingreso = Convert.ToInt32(dataGridView1.CurrentRow.Cells["id_ingreso"].Value.ToString());
+                    Mostrar.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Debe seleccionar un registro por favor", "Ingreso Productos", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
     }
 }

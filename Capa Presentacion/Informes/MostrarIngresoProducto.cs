@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Capa_Presentacion {
+namespace Capa_Presentacion.Informes {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -16,14 +16,14 @@ namespace Capa_Presentacion {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class Mostrar_Ingreso_Productos : ReportClass {
+    public class MostrarIngresoProducto : ReportClass {
         
-        public Mostrar_Ingreso_Productos() {
+        public MostrarIngresoProducto() {
         }
         
         public override string ResourceName {
             get {
-                return "Mostrar_Ingreso_Productos.rpt";
+                return "MostrarIngresoProducto.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace Capa_Presentacion {
         
         public override string FullResourceName {
             get {
-                return "Capa_Presentacion.Mostrar_Ingreso_Productos.rpt";
+                return "Capa_Presentacion.Informes.MostrarIngresoProducto.rpt";
             }
             set {
                 // Do nothing
@@ -66,7 +66,7 @@ namespace Capa_Presentacion {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section3 {
+        public CrystalDecisions.CrystalReports.Engine.Section GroupHeaderSection1 {
             get {
                 return this.ReportDefinition.Sections[2];
             }
@@ -74,7 +74,7 @@ namespace Capa_Presentacion {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
+        public CrystalDecisions.CrystalReports.Engine.Section Section3 {
             get {
                 return this.ReportDefinition.Sections[3];
             }
@@ -82,17 +82,41 @@ namespace Capa_Presentacion {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section5 {
+        public CrystalDecisions.CrystalReports.Engine.Section GroupFooterSection1 {
             get {
                 return this.ReportDefinition.Sections[4];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
+            get {
+                return this.ReportDefinition.Sections[5];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.CrystalReports.Engine.Section Section5 {
+            get {
+                return this.ReportDefinition.Sections[6];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_id_ingreso {
+            get {
+                return this.DataDefinition.ParameterFields[0];
             }
         }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedMostrar_Ingreso_Productos : Component, ICachedReport {
+    public class CachedMostrarIngresoProducto : Component, ICachedReport {
         
-        public CachedMostrar_Ingreso_Productos() {
+        public CachedMostrarIngresoProducto() {
         }
         
         [Browsable(false)]
@@ -129,7 +153,7 @@ namespace Capa_Presentacion {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            Mostrar_Ingreso_Productos rpt = new Mostrar_Ingreso_Productos();
+            MostrarIngresoProducto rpt = new MostrarIngresoProducto();
             rpt.Site = this.Site;
             return rpt;
         }

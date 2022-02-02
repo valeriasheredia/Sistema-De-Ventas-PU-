@@ -109,11 +109,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DB_Sistema_de_VentasDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DB_Sistema_de_VentasDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="FormBase.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -234,16 +229,21 @@
     <Compile Include="FrmVistaProveedores.Designer.cs">
       <DependentUpon>FrmVistaProveedores.cs</DependentUpon>
     </Compile>
-    <Compile Include="Informes\FrmMostrar_Ingreso_Producto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Informes\FrmMostrar_Ingreso_Producto.Designer.cs">
-      <DependentUpon>FrmMostrar_Ingreso_Producto.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Mostrar_Ingreso_Productos.cs">
+    <Compile Include="Informes\Datos_Generales.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Mostrar_Ingreso_Productos.rpt</DependentUpon>
+      <DependentUpon>Datos_Generales.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Informes\FrmMostrar_Ingreso_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informes\FrmMostrar_Ingreso_Productos.Designer.cs">
+      <DependentUpon>FrmMostrar_Ingreso_Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informes\MostrarIngresoProducto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MostrarIngresoProducto.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Program.cs" />
@@ -308,13 +308,12 @@
     <EmbeddedResource Include="FrmVistaProveedores.resx">
       <DependentUpon>FrmVistaProveedores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Informes\FrmMostrar_Ingreso_Producto.resx">
-      <DependentUpon>FrmMostrar_Ingreso_Producto.cs</DependentUpon>
+    <EmbeddedResource Include="Informes\FrmMostrar_Ingreso_Productos.resx">
+      <DependentUpon>FrmMostrar_Ingreso_Productos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Informes\Mostrar_Ingreso_Productos.rdlc" />
-    <EmbeddedResource Include="Mostrar_Ingreso_Productos.rpt">
+    <EmbeddedResource Include="Informes\MostrarIngresoProducto.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Mostrar_Ingreso_Productos.cs</LastGenOutput>
+      <LastGenOutput>MostrarIngresoProducto.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -326,16 +325,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="DB_Sistema_de_VentasDataSet.xsc">
-      <DependentUpon>DB_Sistema_de_VentasDataSet.xsd</DependentUpon>
+    <None Include="Informes\Datos_Generales.xsc">
+      <DependentUpon>Datos_Generales.xsd</DependentUpon>
     </None>
-    <None Include="DB_Sistema_de_VentasDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DB_Sistema_de_VentasDataSet.Designer.cs</LastGenOutput>
+    <None Include="Informes\Datos_Generales.xsd">
       <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Datos_Generales.Designer.cs</LastGenOutput>
     </None>
-    <None Include="DB_Sistema_de_VentasDataSet.xss">
-      <DependentUpon>DB_Sistema_de_VentasDataSet.xsd</DependentUpon>
+    <None Include="Informes\Datos_Generales.xss">
+      <DependentUpon>Datos_Generales.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -394,5 +393,6 @@
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

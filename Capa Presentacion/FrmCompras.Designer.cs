@@ -92,6 +92,7 @@ namespace Capa_Presentacion
             this.btnImprimir.TabIndex = 22;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.UseVisualStyleBackColor = false;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // btnAnular
             // 
